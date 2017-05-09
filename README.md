@@ -13,7 +13,7 @@ Menggunakan framework ionic versi 3.
 
 1.  Clone project
 ```
-$ git clone *Link project here*
+$ git clone https://github.com/ayenz/iosIonicRugbyV2.git
 ```
 2.  Install npm
 ```
