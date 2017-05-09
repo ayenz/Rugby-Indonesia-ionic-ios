@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <div class="titleicon">
+      <img src="assets/img/header.png" width="100%" height="100%"/>
+    </div>
+
+    <div class="titleicon">
+      <img src="assets/img/logo-header.png" height="44px">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/img/sub-header-clubs.png" width="100%">
+  <ion-grid>
+      <ion-row center *ngFor="let post of posts">
+        <ion-card>
+          <ion-col col-3 style="float:left;">
+            <div>
+              <img [src]="post.img"/>
+            </div>
+          </ion-col>
+          <ion-col col-7 style="float:left;">
+            <div>
+              <b>{{post.name}}</b>
+              <p>Location and Training: <br>
+                <p *ngFor="let location of post.location_training">
+                - {{location}}<br></p>
+            <p>
+              {{post.contacts[0].name}}: {{post.contacts[0].value}} <br>
+            </p>
+            </div>
+          </ion-col>
+        </ion-card>
+      </ion-row>
+  </ion-grid>
+</ion-content>

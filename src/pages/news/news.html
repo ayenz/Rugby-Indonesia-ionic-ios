@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <div class="titleicon">
+      <img src="assets/img/header.png" width="100%" height="100%"/>
+    </div>
+
+    <div class="titleicon">
+      <img src="assets/img/logo-header.png" height="44px">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/img/sub-header-news.png" width="100%" style="">
+  <ion-card *ngFor="let jsonItem of jsonItems">
+    <img [src]="jsonItem.img" />
+    <ion-card-content>
+      <ion-card-title>
+        {{jsonItem.title}}
+      </ion-card-title>
+      <p>
+        {{jsonItem.summary}}
+        <a [href]="jsonItem.url"><i>read more...</i></a>
+      </p>
+    </ion-card-content>
+</ion-card>
+
+</ion-content>

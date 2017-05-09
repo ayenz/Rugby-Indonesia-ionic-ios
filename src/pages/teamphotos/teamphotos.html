@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <div class="titleicon">
+      <img src="assets/img/header.png" width="100%" height="100%"/>
+    </div>
+
+    <div class="titleicon">
+      <img src="assets/img/logo-header.png" height="44px">
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img src="assets/img/sub-header-photo.png" width="100%">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button color="danger" (click)="openCamera()" class="button button-full button-positive" ion-button icon-only >
+          <ion-icon name="camera"></ion-icon>
+          Take a Photo
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button color ="danger" (click)="useGallery()" class="button button-full button-positive" ion-button icon-only>
+          <ion-icon name="apps"></ion-icon>
+          Load from Library
+        </button>
+      </ion-col>
+    </ion-row>
+
+
+    <!-- Pull Content Image -->
+    <ion-row wrap>
+      <ion-col col-6 *ngFor="let post of jsonItems?.data">
+        <ion-card>
+		      <ion-item>
+			      <img [src]="post"/>
+		      </ion-item>
+	      </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
