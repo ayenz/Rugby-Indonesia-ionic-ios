@@ -92,8 +92,8 @@ navi:any;
   let frameoo = new Image();
   frameoo.src = this.frame;
   base_image.onload = function(){
-    context.drawImage(base_image, 0, 0, 327, 400);
-    context.drawImage(frameoo, 0, 0, 327, 400);
+    context.drawImage(base_image, 0, 0, 288, 400);
+    context.drawImage(frameoo, 0, 0, 288, 400);
   };
 
   base_image1.onload = function(){
