@@ -1,4 +1,4 @@
-# iosIonicRugbyV2
+# Rugby Indonesia iOS
 Aplikasi Rugby Indonesia (iOS)
 Menggunakan framework ionic versi 3.
 
